@@ -1,0 +1,9 @@
+type: executable
+name: .test
+
+load-context.!standalone:
+  enabled: false
+
+load-context.standalone:
+  deps:
+    - spp

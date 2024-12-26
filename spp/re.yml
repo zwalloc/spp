@@ -1,0 +1,6 @@
+type: static-library
+name: spp
+
+deps:
+  - github:zwalloc/ulib ^1.0.0
+  - github:osdeverr/re-bacs-env ^1.2 [/bpacs]
