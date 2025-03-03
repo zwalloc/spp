@@ -383,6 +383,13 @@ namespace spp
 		void Update(const void* pBuffer, size_t size);
 		void ValidateData(size_t size);
 
+		inline void Step(size_t length)
+		{
+			ValidateData(length);
+			memset((char*)(mData + mOffset), 0, length);
+			StepWrite(length);
+		}
+
 		inline void StepWrite(size_t length)
 		{
 			mOffset += length;

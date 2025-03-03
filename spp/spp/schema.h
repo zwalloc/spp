@@ -280,8 +280,7 @@ namespace spp
 			out.Write<CharT>(0);
 
 			const size_t stepSize = sizeof(CharT) * (size - (uint(elem.size()) + 1));
-			out.ValidateData(stepSize);
-			out.StepWrite(stepSize);
+			out.Step(stepSize);
 		}
 
 		inline static bool read(spp::PacketView& packet, spp::s_basic_string<CharT, size>& out)

@@ -82,6 +82,11 @@ namespace spp
 		StepWrite(size);
 	}
 
+	// void spp::Packet::WriteZero(const void* data, size_t size)
+	// {
+
+	// }
+
 	void spp::Packet::Update(const void* pBuffer, size_t size)
 	{
 		if (size > mAllocSize)
