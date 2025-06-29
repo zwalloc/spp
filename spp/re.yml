@@ -3,4 +3,4 @@ name: spp
 
 deps:
   - github:zwalloc/ulib ^1.0.0
-  - github:osdeverr/re-bacs-env ^1.2 [/bpacs]
+  - github:zwalloc/bpacs ^1.0.0
